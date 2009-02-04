@@ -1,0 +1,14 @@
+<assembly>
+    <id>bin</id>
+    <formats>
+        <format>tar.gz</format>
+    </formats>
+
+    <!-- <includeBaseDirectory>false</includeBaseDirectory>  -->
+
+    <dependencySets>
+        <dependencySet>
+            <scope>runtime</scope>
+        </dependencySet>
+    </dependencySets>
+</assembly>

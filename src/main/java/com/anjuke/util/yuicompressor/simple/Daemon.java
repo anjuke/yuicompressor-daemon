@@ -1,10 +1,10 @@
-package com.anjuke.service.yuicompressor;
+package com.anjuke.util.yuicompressor.simple;
 
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.io.IOException;
 
-public class Main {
+public class Daemon {
     public static void main(String[] args) throws IOException {
         if (args.length <= 0) {
             System.out.println("Usage: listen_port");
@@ -14,7 +14,7 @@ public class Main {
         ServerSocket serverSocket = new ServerSocket(port);
         while (true) {
             Socket socket = serverSocket.accept();
-            Thread thread = new Thread(new Compressor(socket));
+            Thread thread = new Thread(new CompressThread(socket));
             thread.start();
         }
     }
