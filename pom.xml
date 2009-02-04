@@ -7,7 +7,7 @@
     <artifactId>utils-yuicompressor</artifactId>
     <packaging>jar</packaging>
     <version>1.0</version>
-    <name>utils-yuicompressor</name>
+    <name>yuicompressor-daemon</name>
 
     <build>
         <plugins>
